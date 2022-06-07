@@ -11,4 +11,4 @@ To run the api do the following:
 1)python runapi1.py
 2)it runs on localhost
 3)copy the localhost url
-4)paste it in browser with sentence for eg. "/सूर्यास्त के बाद आकाश को देखना कितना अच्छा लगता है ।" 
+4)paste it in browser with sentence for eg. "http://127.0.0.1:5000/सूर्यास्त के बाद आकाश को देखना कितना अच्छा लगता है ।" 
