@@ -5,12 +5,12 @@ import io
 from flask import jsonify
 def createUSR(sentence_for_usr): #this function creates USRs and reads them from .txt file into a dictionary
     #create a txt file for the sentence
-    f1=io.open("txt_files/input.txt","w",encoding="UTF-8") 
+    f1=io.open("txt_files/input.txt","w",encoding="UTF-8") #add your input directory here and usrfilename here.
     f1.write(sentence_for_usr)
     f1.close()
     os.system('sh usr-gener-for-simp.sh') #USR generated in output dir.
     for usrfile in os.listdir("output"):
-        f=io.open(os.path.join("output",usrfile),'r',encoding="UTF-8")
+        f=io.open(os.path.join("output",usrfile),'r',encoding="UTF-8") #add your output directory here.
         usr_list=f.readlines() #We have a list of strings
         #Convert list of strings in a proper format
         usr_dict2={}
