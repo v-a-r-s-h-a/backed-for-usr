@@ -26,6 +26,12 @@ def createUSR(sentence_for_usr): #this function creates USRs and reads them from
         usr_dict2['Speakers']=usr_list[7].strip().split(",")
         usr_dict2['Scope']=usr_list[8].strip().split(",")
         usr_dict2['SentenceType']=usr_list[9].strip()
+        #Code for cleaning the input and output directory,once the values are fetched in dictionary
+        for infiles in os.listdir("txt_files"):
+            os.remove(os.path.join("txt_files",infiles))
+
+        for opfiles in os.listdir("output"):
+            os.remove(os.path.join("output",opfiles))
 
         
         return usr_dict2
