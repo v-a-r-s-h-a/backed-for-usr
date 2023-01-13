@@ -1,6 +1,6 @@
 # backed-for-usr
-
-1)Download both these files and save them in directory where USR is installed.
+0) New Pull request
+1)Download both these files and save them in directory where USR is install.
 2)This api takes sentence as input 
 3)Send sentence as a URL after '/'
 4)The api takes this sentence,converts it into a .txt file in your specified folder(add it to path in backend.py file )
